@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: 'https://testmapspulse.netlify.app', 
+  origin: ['https://testmapspulse.netlify.app', 'https://1pulse-online-beta.netlify.app'],
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type, Authorization',
 })); 
